@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/bottom_bar.dart';
 import 'package:flutter_app/widgets/split_button.dart';
 
 class loginPage extends StatefulWidget {
@@ -84,7 +85,15 @@ class _loginPageState extends State<loginPage> {
                     ),
                     child: TextButton(
                         onPressed: (){
-                          Navigator.pushNamed(context, "/singin");
+                          //Navigator.pushNamed(context, "/store");
+                          /*Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => BottomBarPage()),
+                          );*/
+                          Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(builder: (context) => BottomBarPage()),
+                          );
                         },
                         child: Text(
                           "Enter",

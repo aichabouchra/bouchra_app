@@ -16,7 +16,7 @@ class _accueilPageState extends State<accueilPage> {
       body: Container(
         decoration: BoxDecoration(
           gradient: RadialGradient(
-            center: Alignment.topCenter,
+            center: Alignment.bottomCenter,
             radius: 3,
             colors: [Colors.brown, Color.fromARGB(200, 121, 95, 72), Color.fromARGB(200, 125, 95, 72), Color.fromARGB(150, 125, 95, 72)],
           ),
